@@ -82,7 +82,9 @@ const TicTacToe = () => {
           </div>
         ))}
       </div>
-      <button className="w-[100px] h-[50px] border-none outline-none rounded-[50px] cursor-pointer text-neonAqua mt-[50px] bg-deepSlate" onClick={resetGame}>Reset</button>
+      {
+        lock && <button className="w-[100px] h-[50px] border-none outline-none rounded-[50px] cursor-pointer text-neonAqua mt-[50px] bg-deepSlate" onClick={resetGame}>Reset</button>
+      }
     </div>
   );
 };
